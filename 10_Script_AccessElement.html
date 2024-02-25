@@ -168,7 +168,7 @@
 
             for(let hobby of hobbyList) {
                 // 체크박스 중에 체크해제가 된 항목이 있을 경우
-                if(!hobby.checked) {
+                if(!hobby.checked && hobby.id != 'total') {
                     // allChecked 변수의 값을 false로 변경
                     allChecked = false;
                 }

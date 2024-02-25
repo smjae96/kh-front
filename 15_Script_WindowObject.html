@@ -105,7 +105,7 @@
     <p>* 윈도우 객체 로드 완료의 의미: 모든 태그가 화면에 표시된 상태(시점)</p>
     <script>
         // window.onload
-        function test5() {
+        onload = function test5() {
             console.log("aaaaa");
             // 윈도우 객체 로드 완료 3초 후 div 영역에 데이터 표시
             setTimeout(function () {
@@ -200,7 +200,8 @@
             // 삭제하고자하는 요소노드(객체).remove();
             //area5.firstChild.remove();
             // 선택자를 사용하여 요소에 접근 => 아이디 속성이 'area5'인 요소 내 img 요소
-            document.querySelector("#area5 img").remove();
+           document.querySelector("#area5 img").remove();
+           // document.getElementById("area5").remove(); // id가 area5인 요소를 전부 삭제 따라서 이미지 여러 개 한번에 사라짐.
         }
     </script>
 </body>
